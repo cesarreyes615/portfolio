@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+  font-family: "Annie Use Your Telescope", cursive;
+}
+
+h1 {
+  font-size: calc(1.525rem + 3.3vw);
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: calc(1.425rem + 2.1vw);
+  margin-top: 0.9375rem;
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+a {
+  color: unset;
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  background-image: url("../images/Canva - Silhouette of Trees Under Black Skies With Stars during Night Time.jpg");
+  position: relative;
+}
+
+.text-landing {
+  text-align: center;
+  z-index: 1;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.6;
+  position: absolute;
+}
+
+.projects,
+.contact-me {
+  color: white;
+  text-align: center;
+  width: 100vw;
+  min-height: 50vh;
+  height: auto;
+}
+
+.projects {
+  background-color: #90ee90;
+}
+
+.project-showcase {
+  margin-bottom: calc(1.5625rem + 3.75vw);
+  margin-top: calc(1.3125rem + 0.75vw);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 500px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 15px;
+}
+
+@media (min-width: 1200px) {
+  .project-showcase {
+    margin-bottom: 4.375rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-showcase {
+    margin-top: 1.875rem;
+  }
+}
+
+.project-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  min-height: 300px;
+  height: auto;
+}
+
+.project-item-content {
+  z-index: 1;
+}
+
+#project1,
+#project2,
+#project3,
+#project4 {
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#project1 {
+  background-image: url("../images/just_beers.png");
+}
+
+#project2 {
+  background-image: url("../images/giphy.png");
+}
+
+#project3 {
+  background-image: url("../images/mom.png");
+}
+
+#project4 {
+  background-image: url("../images/splatoon_quiz_game.png");
+}
+
+.contact-me {
+  background-color: #93e9be;
+}
+
+.contact-links {
+  margin-top: calc(1.4375rem + 2.25vw);
+}
+
+@media (min-width: 1200px) {
+  .contact-links {
+    margin-top: 3.125rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

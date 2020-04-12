@@ -1,0 +1,139 @@
+@import "../node_modules//rfs/scss.scss";
+@import url("https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope&display=swap");
+
+@mixin flexPerfectCentering($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin defaultBackgroundSettings {
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+  font-family: "Annie Use Your Telescope", cursive;
+}
+
+h1 {
+  @include rfs(4rem, font-size);
+}
+
+h2 {
+  @include rfs(3rem, font-size);
+  @include rfs(15px, margin-top);
+}
+
+h3 {
+  @include rfs(2.5rem, font-size);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+a {
+  color: unset;
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+.landing {
+  @include flexPerfectCentering(column);
+  @include defaultBackgroundSettings();
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  background-image: url("../images/Canva\ -\ Silhouette\ of\ Trees\ Under\ Black\ Skies\ With\ Stars\ during\ Night\ Time.jpg");
+  position: relative;
+}
+
+.text-landing {
+  text-align: center;
+  z-index: 1;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.6;
+  position: absolute;
+}
+
+.projects,
+.contact-me {
+  color: white;
+  text-align: center;
+  width: 100vw;
+  min-height: 50vh;
+  height: auto;
+}
+
+.projects {
+  background-color: #90ee90;
+}
+
+.project-showcase {
+  @include rfs(70px, margin-bottom);
+  @include rfs(30px, margin-top);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  justify-content: center;
+  grid-gap: 15px;
+}
+
+.project-item {
+  @include flexPerfectCentering(column);
+  position: relative;
+  min-height: 300px;
+  height: auto;
+}
+
+.project-item-content {
+  z-index: 1;
+}
+
+#project1,
+#project2,
+#project3,
+#project4 {
+  @include defaultBackgroundSettings();
+}
+
+#project1 {
+  background-image: url("../images/just_beers.png");
+}
+
+#project2 {
+  background-image: url("../images/giphy.png");
+}
+
+#project3 {
+  background-image: url("../images/mom.png");
+}
+
+#project4 {
+  background-image: url("../images/splatoon_quiz_game.png");
+}
+
+.contact-me {
+  background-color: #93e9be;
+}
+
+.contact-links {
+  @include rfs(50px, margin-top);
+}
