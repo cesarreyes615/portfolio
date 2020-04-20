@@ -29,6 +29,16 @@ h2 {
 }
 
 h3 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+h3 {
   font-size: calc(1.375rem + 1.5vw);
 }
 
@@ -46,6 +56,7 @@ img {
 
 a {
   color: unset;
+  text-decoration: none;
 }
 
 a:hover {
@@ -79,8 +90,23 @@ a:hover {
 }
 
 .text-landing {
+  margin-right: 0.9375rem;
+  margin-left: 0.9375rem;
   text-align: center;
   z-index: 1;
+}
+
+a.quick-links {
+  font-size: calc(1.3125rem + 0.75vw);
+  padding: 0.9375rem;
+  border: solid;
+  z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  a.quick-links {
+    font-size: 1.875rem;
+  }
 }
 
 .color-overlay {

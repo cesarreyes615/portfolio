@@ -33,6 +33,10 @@ h2 {
 }
 
 h3 {
+  @include rfs(2rem, font-size);
+}
+
+h3 {
   @include rfs(2.5rem, font-size);
 }
 
@@ -44,6 +48,7 @@ img {
 
 a {
   color: unset;
+  text-decoration: none;
 }
 
 a:hover {
@@ -62,7 +67,16 @@ a:hover {
 }
 
 .text-landing {
+  @include rfs(15px, margin-right);
+  @include rfs(15px, margin-left);
   text-align: center;
+  z-index: 1;
+}
+
+a.quick-links {
+  @include rfs(30px, font-size);
+  @include rfs(15px, padding);
+  border: solid;
   z-index: 1;
 }
 
