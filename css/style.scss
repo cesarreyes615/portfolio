@@ -8,6 +8,8 @@
   align-items: center;
 }
 
+@import "./caseone";
+
 @mixin defaultBackgroundSettings {
   background-attachment: scroll;
   background-position: center;
@@ -33,11 +35,21 @@ h2 {
 }
 
 h3 {
-  @include rfs(2rem, font-size);
+  @include rfs(2.5rem, font-size);
 }
 
-h3 {
-  @include rfs(2.5rem, font-size);
+h4 {
+  @include rfs(1.8rem, font-size);
+  @include rfs(10px, margin-left);
+  @include rfs(10px, margin-right);
+}
+
+h5 {
+  @include rfs(1.6rem, font-size);
+}
+
+li {
+  @include rfs(1.6rem, font-size);
 }
 
 img {
@@ -150,4 +162,16 @@ a.quick-links {
 
 .contact-links {
   @include rfs(50px, margin-top);
+}
+
+.case-studies {
+  @include rfs(20px, margin-bottom);
+  background-color: $bgColorOne;
+}
+
+.case-one {
+  a {
+    @include rfs(30px, font-size);
+    border: 5px solid black;
+  }
 }

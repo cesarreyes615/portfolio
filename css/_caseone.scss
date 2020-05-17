@@ -1,0 +1,64 @@
+$bgColorOne: rgb(211, 211, 211);
+
+body {
+  background-color: $bgColorOne;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.board-images,
+.audit-images,
+.user-images,
+.alternate-design-images {
+  @include flexPerfectCentering(row);
+  img {
+    width: 400px;
+    height: 400px;
+  }
+  justify-content: space-around;
+}
+
+.pro-con-list,
+.user-feedback {
+  @include flexPerfectCentering(row);
+  justify-content: space-around;
+}
+
+.prototype {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
+  justify-content: center;
+  grid-gap: 15px;
+  img {
+    width: 400px;
+  }
+}
+
+.user-images {
+  img {
+    height: 500px;
+  }
+}
+
+.alternate-design-images {
+  img {
+    height: 600px;
+  }
+}
+
+.final-product {
+  @include rfs(30px, margin-bottom);
+}
+
+.home {
+  @include flexPerfectCentering(row);
+  @include rfs(30px, font-size);
+  @include rfs(30px, margin);
+  a {
+    border: 5px solid black;
+  }
+
+  height: 10vh;
+}

@@ -1,4 +1,128 @@
 @import url("https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope&display=swap");
+body {
+  background-color: lightgray;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.board-images,
+.audit-images,
+.user-images,
+.alternate-design-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.board-images img,
+.audit-images img,
+.user-images img,
+.alternate-design-images img {
+  width: 400px;
+  height: 400px;
+}
+
+.pro-con-list,
+.user-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.prototype {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 500px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 15px;
+}
+
+.prototype img {
+  width: 400px;
+}
+
+.user-images img {
+  height: 500px;
+}
+
+.alternate-design-images img {
+  height: 600px;
+}
+
+.final-product {
+  margin-bottom: calc(1.3125rem + 0.75vw);
+}
+
+@media (min-width: 1200px) {
+  .final-product {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: calc(1.3125rem + 0.75vw);
+  margin: calc(1.3125rem + 0.75vw);
+  height: 10vh;
+}
+
+@media (min-width: 1200px) {
+  .home {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    margin: 1.875rem;
+  }
+}
+
+.home a {
+  border: 5px solid black;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,22 +153,44 @@ h2 {
 }
 
 h3 {
-  font-size: calc(1.325rem + 0.9vw);
-}
-
-@media (min-width: 1200px) {
-  h3 {
-    font-size: 2rem;
-  }
-}
-
-h3 {
   font-size: calc(1.375rem + 1.5vw);
 }
 
 @media (min-width: 1200px) {
   h3 {
     font-size: 2.5rem;
+  }
+}
+
+h4 {
+  font-size: calc(1.305rem + 0.66vw);
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 1.8rem;
+  }
+}
+
+h5 {
+  font-size: calc(1.285rem + 0.42vw);
+}
+
+@media (min-width: 1200px) {
+  h5 {
+    font-size: 1.6rem;
+  }
+}
+
+li {
+  font-size: calc(1.285rem + 0.42vw);
+}
+
+@media (min-width: 1200px) {
+  li {
+    font-size: 1.6rem;
   }
 }
 
@@ -215,6 +361,22 @@ a.quick-links {
 @media (min-width: 1200px) {
   .contact-links {
     margin-top: 3.125rem;
+  }
+}
+
+.case-studies {
+  margin-bottom: 1.25rem;
+  background-color: lightgray;
+}
+
+.case-one a {
+  font-size: calc(1.3125rem + 0.75vw);
+  border: 5px solid black;
+}
+
+@media (min-width: 1200px) {
+  .case-one a {
+    font-size: 1.875rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
